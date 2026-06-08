@@ -18,6 +18,9 @@ def build_unified_report(
     output_path: str | Path,
 ) -> dict[str, Any]:
     cases = _read_jsonl(eval_path)
+    prediction_ids = {row["case_id"] for row in _read_jsonl(predictions_path)}
+    if prediction_ids:
+        cases = [row for row in cases if row["case_id"] in prediction_ids]
     tool_metrics = evaluate_tool_predictions(eval_path, predictions_path)
     production_metrics = evaluate_production_agent(eval_path, predictions_path)
     final_metrics = evaluate_final_answers(eval_path, predictions_path)
