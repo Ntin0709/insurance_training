@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+.venv/
+outputs/
+*.log
+data/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.jsonl.tmp

@@ -1,0 +1,17 @@
+model: google/gemma-3-4b-it
+train_file: data/insurance/sdg_rules_50k_balanced/sft_train.jsonl
+validation_file: data/insurance/sdg_rules_50k_balanced/sft_val.jsonl
+output_dir: outputs/gemma3-insurance-sft-lora
+epochs: 2.0
+batch_size: 1
+grad_accum: 16
+lr: 0.00015
+max_steps: -1
+max_seq_length: 4096
+precision: auto
+lora_r: 32
+lora_alpha: 64
+lora_dropout: 0.05
+bf16: true
+tf32: true
+gradient_checkpointing: true

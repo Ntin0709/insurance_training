@@ -1,0 +1,28 @@
+{
+  "bank": "State Bank of India",
+  "insurance_partner": "SBI General Insurance",
+  "notes": [
+    "SBI General Insurance and SBI are separate legal entities; SBI acts as corporate agent for sourcing insurance products where applicable.",
+    "Use official pages and policy/prospectus PDFs as source of truth. Do not claim a product is best unless eligibility and exclusions have been checked."
+  ],
+  "sources": [
+    {
+      "source_id": "sbi_general_home",
+      "title": "SBI General Insurance Home",
+      "url": "https://www.sbigeneral.in/",
+      "document_type": "html"
+    },
+    {
+      "source_id": "sbi_general_products",
+      "title": "SBI General Products",
+      "url": "https://www.sbigeneral.in/product/%5Blist%5D",
+      "document_type": "html"
+    },
+    {
+      "source_id": "sbi_health_alpha_prospectus",
+      "title": "SBI General Health Alpha Prospectus",
+      "url": "https://content.sbigeneral.in/uploads/SBI_General_Health_Alpha_Prospectus_20260301_002_70422d8179.pdf",
+      "document_type": "pdf"
+    }
+  ]
+}
